@@ -12,11 +12,12 @@ export default class Cl_iEmpleado{
         return prompt("Introduzca el Año de Servicio:")
     }
 
-    reporteEmpleado(nombre,aumento,nuevoSueldo){
+    reporteEmpleado(nombre,aumento,nuevoSueldo,categoria){
         return `
         <br> Nombre: ${nombre}
         <br> Aumento: ${aumento}$
         <br> Nuevo Sueldo: ${nuevoSueldo}$
+        <br> Categoria: ${categoria}
         `
     }
 }

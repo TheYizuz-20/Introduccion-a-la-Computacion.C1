@@ -15,4 +15,4 @@ let iEmpleado = new Cl_iEmpleado(),
     empleado = new Cl_Empleado(n,sB,aS),
     salida = document.getElementById("salida");
 
-    salida.innerHTML = iEmpleado.reporteEmpleado(empleado.nombre,empleado.aumento(),empleado.nuevoSueldo());
+    salida.innerHTML = iEmpleado.reporteEmpleado(empleado.nombre,empleado.aumento(),empleado.nuevoSueldo(),empleado.categoria());

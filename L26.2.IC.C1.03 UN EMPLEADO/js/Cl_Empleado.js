@@ -30,14 +30,22 @@ export default class Cl_Empleado{
     }
 
     aumento(){
-        if (this.annoServicio >5){
+        if (this.annoServicio > 5){
             return this.sueldoBase * 0.15
-        } else{
+        } else {
             return 0
         }
     }
 
     nuevoSueldo(){
         return this.sueldoBase + this.aumento()
+    }
+
+    categoria(){
+        if (this.annoServicio >= 7){
+            return "Veterano"
+        } else {
+            return "Novato"
+        }
     }
 }
